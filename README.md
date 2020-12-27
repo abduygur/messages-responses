@@ -9,7 +9,7 @@
 5. <a href = "#File-Structure" > File Structure </a>
 6. <a href = "#Requirements" > Requirements </a>
 7. <a href = "#Authors" > Authors </a>
-8. <a href = "#Acknowledgements" > Acknowledgements </a>
+
 
 
 # Project Overview
@@ -67,7 +67,7 @@ The app is classifies the text message into categories.
        3. data/disaster_categories.csv: Get the categories of messages
        4. data/DisasterResponse.db: Database for storing the processed data
   
-<<<<<<< HEAD
+
 2. Run the train_classifier: Get the data from db and create ML Pipeline and save the model
 
       
