@@ -6,11 +6,12 @@ from sqlalchemy import create_engine
 from flask import render_template, request
 from plotly.graph_objs import Bar, Box
 
+#Create sqlite engine and fetch data from DisastorResponse db
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('InsertTableName', engine)
 
 
-
+#Load model pickle file
 model = pickle.load(open("../models/classifier.pkl", 'rb'))
 
 
