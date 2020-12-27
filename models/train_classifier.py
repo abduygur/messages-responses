@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.model_selection import train_test_split, GridSearchCV
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, make_scorer
 from text_tokenize import text_tokenizer
 
 
@@ -37,6 +37,24 @@ def load_data(database_filepath):
 
     return X,Y
 
+
+def performance_metric(y_true, y_pred):
+    """Calculate average recall score for all targets
+
+    Args:
+    y_true: array. Array containing actual labels.
+    y_pred: array. Array containing predicted labels.
+
+    Returns:
+    score: float. Median recall score
+    """
+    f1_list = []
+    for i in range(np.shape(y_pred)[1]):
+        f1 = f1_score(np.array(y_true)[:, i], y_pred[:, i])
+        f1_list.append(f1)
+
+    score = np.median(f1_list)
+    return score
 
 
 def build_model():
