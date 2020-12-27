@@ -67,6 +67,7 @@ The app is classifies the text message into categories.
        3. data/disaster_categories.csv: Get the categories of messages
        4. data/DisasterResponse.db: Database for storing the processed data
   
+<<<<<<< HEAD
 2. Run the train_classifier: Get the data from db and create ML Pipeline and save the model
 
       
@@ -135,3 +136,32 @@ All project written in Python 3.8 and requirements.txt file shows the necessary 
 Figure Eight for providing messages dataset to train my model
 
 
+||||||| c65e330
+# Project Motivation
+
+For this project, I was interested in using Airbnb-Istanbul Data from 2020 to better understand:
+
+1. What is the price depends on?
+2. Super Hosts 
+3. Is listings prices are predictable?
+
+
+# File Descriptions
+
+The listings.csv.gz file is the airbnb-istanbul 2020 data i used in this project.
+
+There is one notebook available here to showcase work related to the above questions. Markdown cells were used to assist in walking through the thought process for individual steps. Also there is an html file which shows the after notebooks code run. 
+
+
+
+# Results
+
+The main findings of the code can be found at the post available <a href = "https://medium.com/analytics-vidhya/airbnb-hosts-and-where-to-find-them-4c204dfd1138" >here</a>
+
+
+
+# Licensing, Authors, Acknowledgements
+
+Must give credit to Airbnb for the data. You can find the Licencing for the data and other descriptive information at the Airbnb link available <a href = "http://insideairbnb.com/get-the-data.html" > here </a>. 
+=======
+>>>>>>> 2b7af4e7233f39cdd9674ebc2739b5c259485b22
