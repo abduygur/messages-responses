@@ -60,7 +60,20 @@ def build_model():
             RandomForestClassifier(n_estimators=100, class_weight='balanced', max_depth=20, min_samples_split=10,
                                    n_jobs=-1)))
     ])
-    return pipeline
+
+    # Create Dictionary for tuning min_samples_split and n_estimators in Random Forest Classifier
+    parameters = {
+        'clf__estimator__min_samples_split': [2, 5, 10],
+        'clf__estimator__n_estimators': [50, 100, 200]
+    }
+
+    scorer = make_scorer(performance_metric)
+
+    model = GridSearchCV(pipeline, param_grid=parameters, verbose=5, n_jobs=5, scoring=scorer)
+
+
+
+    return model
 
 
 def evaluate_model(model, X_test, y_test):
