@@ -135,8 +135,6 @@ All project written in Python 3.8 and requirements.txt file shows the necessary 
 # Acknowledgements
 Figure Eight for providing messages dataset to train my model
 
-
-||||||| c65e330
 # Project Motivation
 
 For this project, I was interested in using Airbnb-Istanbul Data from 2020 to better understand:
