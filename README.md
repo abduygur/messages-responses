@@ -16,6 +16,10 @@
 
 In this project, i applied different data engineering techniques using <a href = "https://appen.com/"> Figure Eight </a> to build a model for an API that classifies disaster messages.
 
+This project will include a Flask app which takes the input message and classify it into different categories.
+It helps to the people who don't want to read entire text messages in the emergency situations.
+
+Just copy the text message and paste it into the textbox. The app will classify the text messages into categories.
 
 # Project Components
 
